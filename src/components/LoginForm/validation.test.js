@@ -1,11 +1,12 @@
 import { render, screen } from "@testing-library/react";
-import LoginForm, {
+import LoginForm from ".";
+import {
   getEmailErrorMessage,
   getPasswordErrorMessage,
   getPasswordProperties,
   isValidEmail,
   isValidPassword,
-} from ".";
+} from "../../helpers/validation";
 
 test("renders sign in page", () => {
   render(<LoginForm />);
